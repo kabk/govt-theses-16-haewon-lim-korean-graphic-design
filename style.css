@@ -1,1 +1,121 @@
-style sheet
+
+/* cover page*/
+#cover {
+  background-color: black;
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+}
+
+.FLAG {
+    margin: 2em;
+    height: 600px;
+    width: 800px;   
+    float: center;
+
+}
+
+.korea {
+  background: white;
+  position: relative;
+}
+.korea .umyang {
+  position: absolute;
+  background: -webkit-linear-gradient(top, red, blue);
+  background: linear-gradient(to bottom, red, blue);
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  top: 140px;
+  left: 50%;
+  margin-left: -160px;
+  -webkit-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+.korea .umyang:before, .korea .umyang:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  top: 80px;
+}
+.korea .umyang:before {
+  background: red;
+}
+.korea .umyang:after {
+  background: blue;
+  right: 0;
+}
+
+.korea .umyang:hover:before {
+  background: blue;
+}
+.korea .umyang:hover:after {
+  background: red;
+  right: 0;
+}
+
+.korea span {
+  position: absolute;
+  display: block;
+  font-size: 10rem;
+  top: -110px;
+}
+.korea span:first-child {
+  left: 340px;
+  -webkit-transform: rotate(125deg);
+  transform: rotate(125deg);
+}
+.korea span:nth-child(2) {
+  right: 340px;
+  -webkit-transform: rotate(-125deg);
+  transform: rotate(-125deg);
+}
+.korea span br {
+  line-height: 600px;
+}
+
+
+
+/* index page*/
+
+.circle{
+width:50px;
+height:50px;
+border-radius:50%;
+background: -webkit-linear-gradient(top, red, blue);
+background: linear-gradient(to bottom, red, blue);line-height:500px;
+top: 140px;
+-webkit-transform: rotate(20deg);
+transform: rotate(20deg);
+top: 0;
+left: 0;
+}
+
+.circle:hover{
+background: -webkit-linear-gradient(top, blue, red);
+background: linear-gradient(to bottom, blue, red);line-height:500px;
+}
+
+.textwrapper {
+  padding-top:50px;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 50px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 50px; /* Firefox */
+    column-gap: 50px;
+    font-family: Verdana;
+  font-size: 18px;
+  line-height:27px;
+  padding: 20px 80px 80px 80px;
+  color: red;
+  }
+
+.textwrapper:hover{
+  color: blue;
+}
